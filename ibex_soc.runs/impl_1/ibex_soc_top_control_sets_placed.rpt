@@ -1,0 +1,153 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Mar 25 17:46:49 2026
+| Host         : ZZZixth running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ibex_soc_top_control_sets_placed.rpt
+| Design       : ibex_soc_top
+| Device       : xc7z015
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    75 |
+|    Minimum number of control sets                        |    75 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    73 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    75 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     5 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    59 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            4 |
+| No           | No                    | Yes                    |              38 |           24 |
+| No           | Yes                   | No                     |              25 |            7 |
+| Yes          | No                    | No                     |             278 |          108 |
+| Yes          | No                    | Yes                    |            1644 |          778 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+-------------------------------------------------------------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
+|    Clock Signal   |                                          Enable Signal                                          |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------+-------------------------------------------------------------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
+| ~pl_clk_IBUF_BUFG |                                                                                                 |                                                    |                1 |              1 |         1.00 |
+|  pl_clk_IBUF_BUFG |                                                                                                 | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                3 |              4 |         1.33 |
+|  clk              | u_ibex/u_ibex_core/id_stage_i/controller_i/ctrl_fsm_ns                                          | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                2 |              4 |         2.00 |
+|  pl_clk_IBUF_BUFG |                                                                                                 |                                                    |                3 |              5 |         1.67 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/cm_state_q_reg[0][0] |                                                    |                2 |              5 |         2.50 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/compressed_decoder_i/g_cm_meta_nr.cm_rlist_q[4]_i_1_n_0           |                                                    |                5 |              5 |         1.00 |
+|  clk              | u_ibex/u_ibex_core/id_stage_i/controller_i/debug_mode_q_reg_4[0]                                | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                2 |              6 |         3.00 |
+|  clk              | u_ibex/u_ibex_core/load_store_unit_i/ctrl_update                                                | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                4 |              6 |         1.50 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/g_instr_rdata_nr.instr_rdata_id_o_reg[27]_1[0]                    | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                5 |              7 |         1.40 |
+|  pl_clk_IBUF_BUFG | u_ibex/u_ibex_core/if_stage_i/E[3]                                                              | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                3 |              8 |         2.67 |
+|  pl_clk_IBUF_BUFG | u_ibex/u_ibex_core/if_stage_i/E[2]                                                              | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                2 |              8 |         4.00 |
+|  pl_clk_IBUF_BUFG | u_ibex/u_ibex_core/if_stage_i/E[1]                                                              | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                1 |              8 |         8.00 |
+|  clk              | u_ibex/u_ibex_core/id_stage_i/controller_i/rdata_q[15]_i_4[0]                                   | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                4 |              8 |         2.00 |
+|  clk              | u_ibex/u_ibex_core/id_stage_i/controller_i/div_en_ex                                            | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                3 |              8 |         2.67 |
+|  pl_clk_IBUF_BUFG | u_ibex/u_ibex_core/if_stage_i/E[0]                                                              | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                5 |             11 |         2.20 |
+|  clk              | u_ibex/u_ibex_core/id_stage_i/controller_i/ctrl_fsm_cs_reg[1]_1[0]                              |                                                    |                4 |             12 |         3.00 |
+|  pl_clk_IBUF_BUFG | por_cnt[0]_i_1_n_0                                                                              |                                                    |                4 |             16 |         4.00 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/g_instr_rdata_nr.instr_rdata_id_o_reg[23]_0[0]                    | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                6 |             18 |         3.00 |
+|  clk              | u_ibex/u_ibex_core/load_store_unit_i/rdata_update                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                9 |             24 |         2.67 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/g_instr_rdata_nr.instr_rdata_id_o_reg[25]_2[0]                    | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               11 |             24 |         2.18 |
+|  pl_clk_IBUF_BUFG |                                                                                                 | hb_cnt[0]_i_1_n_0                                  |                7 |             25 |         3.57 |
+|  clk              | u_ibex/u_ibex_core/id_stage_i/controller_i/E[0]                                                 |                                                    |                8 |             31 |         3.88 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/g_instr_rdata_nr.instr_rdata_id_o_reg[24]_1[0]                    | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               17 |             31 |         1.82 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/g_instr_rdata_nr.instr_rdata_id_o_reg[27]_2[0]                    | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               21 |             31 |         1.48 |
+|  clk              | u_ibex/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q                         | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               11 |             32 |         2.91 |
+|  clk              | u_ibex/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q                          | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               17 |             32 |         1.88 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[5]                                                | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               11 |             32 |         2.91 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[11]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                5 |             32 |         6.40 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[12]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                9 |             32 |         3.56 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[21]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               17 |             32 |         1.88 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[16]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               18 |             32 |         1.78 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[24]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               18 |             32 |         1.78 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[23]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               22 |             32 |         1.45 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[7]                                                | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               13 |             32 |         2.46 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[26]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               14 |             32 |         2.29 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[20]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               11 |             32 |         2.91 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[1]                                                | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               18 |             32 |         1.78 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[19]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               13 |             32 |         2.46 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[27]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               16 |             32 |         2.00 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[10]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               19 |             32 |         1.68 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[9]                                                | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               21 |             32 |         1.52 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/g_instr_rdata_nr.instr_rdata_id_o_reg[27]_0[0]                    | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               18 |             32 |         1.78 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/g_instr_rdata_nr.instr_rdata_id_o_reg[21]_4[0]                    | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                8 |             32 |         4.00 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/g_instr_rdata_nr.instr_rdata_id_o_reg[11]_0[0]                    | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               19 |             32 |         1.68 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/g_instr_rdata_nr.instr_rdata_id_o_reg[11]_0[3]                    | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               16 |             32 |         2.00 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/g_instr_rdata_nr.instr_rdata_id_o_reg[11]_0[2]                    | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               13 |             32 |         2.46 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[28]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               18 |             32 |         1.78 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/g_instr_rdata_nr.instr_rdata_id_o_reg[29]_1[0]                    | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                9 |             32 |         3.56 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/g_instr_rdata_nr.instr_rdata_id_o_reg[21]_3[0]                    | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               14 |             32 |         2.29 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/g_instr_rdata_nr.instr_rdata_id_o_reg[5]_29[0]                    | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               19 |             32 |         1.68 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/mcountinhibit_q_reg[2]_0[1]                                       | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               13 |             32 |         2.46 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/mcountinhibit_q_reg[2]_0[0]                                       | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               13 |             32 |         2.46 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/mcountinhibit_q_reg[0]_0[1]                                       | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               16 |             32 |         2.00 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/mcountinhibit_q_reg[0]_0[0]                                       | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               15 |             32 |         2.13 |
+|  clk              | u_ibex/u_ibex_core/load_store_unit_i/addr_update                                                | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               10 |             32 |         3.20 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[0]                                                | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               25 |             32 |         1.28 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/g_instr_rdata_nr.instr_rdata_id_o_reg[11]_0[1]                    | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |                7 |             32 |         4.57 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/entry_en_1           |                                                    |                8 |             32 |         4.00 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/entry_en_0           |                                                    |               10 |             32 |         3.20 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/entry_en_2           |                                                    |                7 |             32 |         4.57 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[13]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               11 |             32 |         2.91 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[4]                                                | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               18 |             32 |         1.78 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[18]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               11 |             32 |         2.91 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[29]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               13 |             32 |         2.46 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[3]                                                | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               17 |             32 |         1.88 |
+|  pl_clk_IBUF_BUFG | rdata_q_reg[31]_i_3_n_0                                                                         |                                                    |               12 |             32 |         2.67 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[17]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               11 |             32 |         2.91 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[15]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               23 |             32 |         1.39 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[8]                                                | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               12 |             32 |         2.67 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[2]                                                | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               19 |             32 |         1.68 |
+|  pl_clk_IBUF_BUFG | u_ibex/u_ibex_core/load_store_unit_i/FSM_sequential_ls_fsm_cs_reg[2]_0                          | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               14 |             32 |         2.29 |
+|  clk              | u_ibex/gen_regfile_ff.register_file_i/p_0_out[25]                                               | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               16 |             32 |         2.00 |
+|  clk              |                                                                                                 | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               21 |             34 |         1.62 |
+|  clk              | u_ibex/u_ibex_core/id_stage_i/controller_i/instr_valid_id_q_reg_1[0]                            | u_ibex/gen_regfile_ff.register_file_i/por_done_reg |               32 |             34 |         1.06 |
+|  clk              | u_ibex/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/E[0]                 |                                                    |               48 |             81 |         1.69 |
++-------------------+-------------------------------------------------------------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
+
+

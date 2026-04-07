@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Mar 25 15:54:51 2026
+# Process ID         : 9168
+# Current directory  : E:/vivadoprojects/ibex_soc/ibex_soc.runs/zynq_ps_bd_processing_system7_0_0_synth_1
+# Command line       : vivado.exe -log zynq_ps_bd_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynq_ps_bd_processing_system7_0_0.tcl
+# Log file           : E:/vivadoprojects/ibex_soc/ibex_soc.runs/zynq_ps_bd_processing_system7_0_0_synth_1/zynq_ps_bd_processing_system7_0_0.vds
+# Journal file       : E:/vivadoprojects/ibex_soc/ibex_soc.runs/zynq_ps_bd_processing_system7_0_0_synth_1\vivado.jou
+# Running On         : ZZZixth
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7840H with Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33492 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35639 MB
+# Available Virtual  : 20708 MB
+#-----------------------------------------------------------
+source zynq_ps_bd_processing_system7_0_0.tcl -notrace

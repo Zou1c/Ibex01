@@ -1,0 +1,170 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Mar 25 17:47:17 2026
+| Host         : ZZZixth running 64-bit major release  (build 9200)
+| Command      : report_drc -file ibex_soc_top_drc_routed.rpt -pb ibex_soc_top_drc_routed.pb -rpx ibex_soc_top_drc_routed.rpx
+| Design       : ibex_soc_top
+| Device       : xc7z015clg485-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 26
++-----------+----------+----------------------------+--------+
+| Rule      | Severity | Description                | Checks |
++-----------+----------+----------------------------+--------+
+| CHECK-3   | Warning  | Report rule limit reached  | 1      |
+| DPIP-1    | Warning  | Input pipelining           | 3      |
+| DPOP-1    | Warning  | PREG Output pipelining     | 1      |
+| DPOP-2    | Warning  | MREG Output pipelining     | 1      |
+| REQP-1839 | Warning  | RAMB36 async control check | 20     |
++-----------+----------+----------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP u_ibex/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed input u_ibex/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP u_ibex/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed input u_ibex/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP u_ibex/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed input u_ibex/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP u_ibex/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed output u_ibex/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP u_ibex/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed multiplier stage u_ibex/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/mac_res_signed/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[10].rf_reg_q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[10].rf_reg_q_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[10].rf_reg_q_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[10].rf_reg_q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[10].rf_reg_q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[10].rf_reg_q_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[10].rf_reg_q_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[10].rf_reg_q_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[10].rf_reg_q_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[10].rf_reg_q_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[11].rf_reg_q_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[11].rf_reg_q_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[11].rf_reg_q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[11].rf_reg_q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[11].rf_reg_q_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[11].rf_reg_q_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/gen_regfile_ff.register_file_i/g_rf_flops[11].rf_reg_q_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/FSM_sequential_md_state_q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/FSM_sequential_md_state_q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 u_bram/mem_reg_0 has an input control pin u_bram/mem_reg_0/ADDRARDADDR[14] (net: u_bram/alu_adder_result_ex_o[13]) which is driven by a register (u_ibex/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/FSM_sequential_md_state_q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+

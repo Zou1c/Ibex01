@@ -1,0 +1,1193 @@
+
+*** Running vivado
+    with args -log ibex_soc_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ibex_soc_top.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Mar 25 17:44:25 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source ibex_soc_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado24.2/Vivado/2024.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental E:/vivadoprojects/ibex_soc/ibex_soc.srcs/utils_1/imports/synth_1/ibex_soc_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/vivadoprojects/ibex_soc/ibex_soc.srcs/utils_1/imports/synth_1/ibex_soc_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ibex_soc_top -part xc7z015clg485-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z015'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z015'
+INFO: [Device 21-403] Loading part xc7z015clg485-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10404
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1354.082 ; gain = 468.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11067] parameter 'ADDR_W' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:381]
+WARNING: [Synth 8-11067] parameter 'BUS_SIZE' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:382]
+WARNING: [Synth 8-11067] parameter 'BUS_BYTES' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:383]
+WARNING: [Synth 8-11067] parameter 'BUS_W' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:384]
+WARNING: [Synth 8-11067] parameter 'IC_SIZE_BYTES' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:385]
+WARNING: [Synth 8-11067] parameter 'IC_NUM_WAYS' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:386]
+WARNING: [Synth 8-11067] parameter 'IC_LINE_SIZE' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:387]
+WARNING: [Synth 8-11067] parameter 'IC_LINE_BYTES' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:388]
+WARNING: [Synth 8-11067] parameter 'IC_LINE_W' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:389]
+WARNING: [Synth 8-11067] parameter 'IC_NUM_LINES' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:390]
+WARNING: [Synth 8-11067] parameter 'IC_LINE_BEATS' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:391]
+WARNING: [Synth 8-11067] parameter 'IC_LINE_BEATS_W' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:392]
+WARNING: [Synth 8-11067] parameter 'IC_INDEX_W' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:393]
+WARNING: [Synth 8-11067] parameter 'IC_INDEX_HI' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:394]
+WARNING: [Synth 8-11067] parameter 'IC_TAG_SIZE' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:395]
+WARNING: [Synth 8-11067] parameter 'IC_OUTPUT_BEATS' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:396]
+WARNING: [Synth 8-11067] parameter 'SCRAMBLE_KEY_W' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:398]
+WARNING: [Synth 8-11067] parameter 'SCRAMBLE_NONCE_W' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:399]
+WARNING: [Synth 8-11067] parameter 'PMP_MAX_REGIONS' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:402]
+WARNING: [Synth 8-11067] parameter 'PMP_CFG_W' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:403]
+WARNING: [Synth 8-11067] parameter 'PMP_ADDR_MSB' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:406]
+WARNING: [Synth 8-11067] parameter 'PMP_ADDR_LSB' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:409]
+WARNING: [Synth 8-11067] parameter 'PMP_I' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:412]
+WARNING: [Synth 8-11067] parameter 'PMP_I2' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:413]
+WARNING: [Synth 8-11067] parameter 'PMP_D' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:414]
+WARNING: [Synth 8-11067] parameter 'CSR_OFF_PMP_CFG' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:614]
+WARNING: [Synth 8-11067] parameter 'CSR_OFF_PMP_ADDR' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:615]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_MIE_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:618]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_MPIE_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:619]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_MPP_BIT_LOW' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:620]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_MPP_BIT_HIGH' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:621]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_MPRV_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:622]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_TW_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:623]
+WARNING: [Synth 8-11067] parameter 'CSR_MISA_MXL' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:626]
+WARNING: [Synth 8-11067] parameter 'CSR_MSIX_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:629]
+WARNING: [Synth 8-11067] parameter 'CSR_MTIX_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:630]
+WARNING: [Synth 8-11067] parameter 'CSR_MEIX_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:631]
+WARNING: [Synth 8-11067] parameter 'CSR_MFIX_BIT_LOW' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:632]
+WARNING: [Synth 8-11067] parameter 'CSR_MFIX_BIT_HIGH' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:633]
+WARNING: [Synth 8-11067] parameter 'CSR_MSECCFG_MML_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:636]
+WARNING: [Synth 8-11067] parameter 'CSR_MSECCFG_MMWP_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:637]
+WARNING: [Synth 8-11067] parameter 'CSR_MSECCFG_RLB_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:638]
+WARNING: [Synth 8-11067] parameter 'LfsrWidth' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:653]
+WARNING: [Synth 8-11067] parameter 'RndCnstLfsrSeedDefault' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:656]
+WARNING: [Synth 8-11067] parameter 'RndCnstLfsrPermDefault' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:657]
+WARNING: [Synth 8-11067] parameter 'RndCnstIbexKeyDefault' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:660]
+WARNING: [Synth 8-11067] parameter 'RndCnstIbexNonceDefault' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:662]
+WARNING: [Synth 8-11067] parameter 'IbexMuBiWidth' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:667]
+WARNING: [Synth 8-11067] parameter 'IbexMuBiOn' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:674]
+WARNING: [Synth 8-11067] parameter 'IbexMuBiOff' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:675]
+WARNING: [Synth 8-11067] parameter 'PmpCfgRst' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:684]
+WARNING: [Synth 8-11067] parameter 'PmpAddrRst' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:706]
+WARNING: [Synth 8-11067] parameter 'PmpMseccfgRst' declared inside package 'ibex_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_pkg.sv:725]
+WARNING: [Synth 8-11067] parameter 'Secded2216ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:175]
+WARNING: [Synth 8-11067] parameter 'Secded2216ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:176]
+WARNING: [Synth 8-11067] parameter 'Secded2822ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:184]
+WARNING: [Synth 8-11067] parameter 'Secded2822ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:185]
+WARNING: [Synth 8-11067] parameter 'Secded3932ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:193]
+WARNING: [Synth 8-11067] parameter 'Secded3932ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:194]
+WARNING: [Synth 8-11067] parameter 'Secded6457ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:202]
+WARNING: [Synth 8-11067] parameter 'Secded6457ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:203]
+WARNING: [Synth 8-11067] parameter 'Secded7264ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:211]
+WARNING: [Synth 8-11067] parameter 'Secded7264ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:212]
+WARNING: [Synth 8-11067] parameter 'SecdedHamming2216ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:220]
+WARNING: [Synth 8-11067] parameter 'SecdedHamming2216ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:221]
+WARNING: [Synth 8-11067] parameter 'SecdedHamming3932ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:229]
+WARNING: [Synth 8-11067] parameter 'SecdedHamming3932ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:230]
+WARNING: [Synth 8-11067] parameter 'SecdedHamming7264ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:238]
+WARNING: [Synth 8-11067] parameter 'SecdedHamming7264ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:239]
+WARNING: [Synth 8-11067] parameter 'SecdedHamming7668ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:247]
+WARNING: [Synth 8-11067] parameter 'SecdedHamming7668ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:248]
+WARNING: [Synth 8-11067] parameter 'SecdedInv2216ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:256]
+WARNING: [Synth 8-11067] parameter 'SecdedInv2216ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:257]
+WARNING: [Synth 8-11067] parameter 'SecdedInv2822ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:265]
+WARNING: [Synth 8-11067] parameter 'SecdedInv2822ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:266]
+WARNING: [Synth 8-11067] parameter 'SecdedInv3932ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:274]
+WARNING: [Synth 8-11067] parameter 'SecdedInv3932ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:275]
+WARNING: [Synth 8-11067] parameter 'SecdedInv6457ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:283]
+WARNING: [Synth 8-11067] parameter 'SecdedInv6457ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:284]
+WARNING: [Synth 8-11067] parameter 'SecdedInv7264ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:292]
+WARNING: [Synth 8-11067] parameter 'SecdedInv7264ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:293]
+WARNING: [Synth 8-11067] parameter 'SecdedInvHamming2216ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:301]
+WARNING: [Synth 8-11067] parameter 'SecdedInvHamming2216ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:302]
+WARNING: [Synth 8-11067] parameter 'SecdedInvHamming3932ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:310]
+WARNING: [Synth 8-11067] parameter 'SecdedInvHamming3932ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:311]
+WARNING: [Synth 8-11067] parameter 'SecdedInvHamming7264ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:319]
+WARNING: [Synth 8-11067] parameter 'SecdedInvHamming7264ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:320]
+WARNING: [Synth 8-11067] parameter 'SecdedInvHamming7668ZeroEcc' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:328]
+WARNING: [Synth 8-11067] parameter 'SecdedInvHamming7668ZeroWord' declared inside package 'prim_secded_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_secded_pkg.sv:329]
+WARNING: [Synth 8-11067] parameter 'RAM_1P_CFG_DEFAULT' declared inside package 'prim_ram_1p_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim_generic/rtl/prim_ram_1p_pkg.sv:23]
+WARNING: [Synth 8-11067] parameter 'MuBi4Width' declared inside package 'prim_mubi_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_mubi_pkg.sv:21]
+WARNING: [Synth 8-11067] parameter 'MuBi8Width' declared inside package 'prim_mubi_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_mubi_pkg.sv:160]
+WARNING: [Synth 8-11067] parameter 'MuBi12Width' declared inside package 'prim_mubi_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_mubi_pkg.sv:299]
+WARNING: [Synth 8-11067] parameter 'MuBi16Width' declared inside package 'prim_mubi_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_mubi_pkg.sv:438]
+WARNING: [Synth 8-11067] parameter 'MuBi20Width' declared inside package 'prim_mubi_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_mubi_pkg.sv:577]
+WARNING: [Synth 8-11067] parameter 'MuBi24Width' declared inside package 'prim_mubi_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_mubi_pkg.sv:716]
+WARNING: [Synth 8-11067] parameter 'MuBi28Width' declared inside package 'prim_mubi_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_mubi_pkg.sv:855]
+WARNING: [Synth 8-11067] parameter 'MuBi32Width' declared inside package 'prim_mubi_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_mubi_pkg.sv:994]
+WARNING: [Synth 8-11067] parameter 'PRINCE_SBOX4' declared inside package 'prim_cipher_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_cipher_pkg.sv:23]
+WARNING: [Synth 8-11067] parameter 'PRINCE_SBOX4_INV' declared inside package 'prim_cipher_pkg' shall be treated as localparam [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_cipher_pkg.sv:28]
+INFO: [Common 17-14] Message 'Synth 8-11067' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6157] synthesizing module 'ibex_soc_top' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/tmp/ibex_soc_top.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'zynq_ps_bd_wrapper' [e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/hdl/zynq_ps_bd_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'zynq_ps_bd' [e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/synth/zynq_ps_bd.v:13]
+INFO: [Synth 8-6157] synthesizing module 'zynq_ps_bd_processing_system7_0_0' [E:/vivadoprojects/ibex_soc/ibex_soc.runs/synth_1/.Xil/Vivado-11480-ZZZixth/realtime/zynq_ps_bd_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_ps_bd_processing_system7_0_0' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.runs/synth_1/.Xil/Vivado-11480-ZZZixth/realtime/zynq_ps_bd_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_ps_bd' (0#1) [e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/synth/zynq_ps_bd.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_ps_bd_wrapper' (0#1) [e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/hdl/zynq_ps_bd_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'ibex_top' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_top.sv:15]
+	Parameter PMPEnable bound to: 1'b0 
+	Parameter PMPGranularity bound to: 32'b00000000000000000000000000000000 
+	Parameter PMPNumRegions bound to: 32'b00000000000000000000000000000100 
+	Parameter MHPMCounterNum bound to: 32'b00000000000000000000000000000000 
+	Parameter MHPMCounterWidth bound to: 32'b00000000000000000000000000101000 
+	Parameter RV32E bound to: 1'b0 
+	Parameter RV32M bound to: 2 - type: integer 
+	Parameter RV32B bound to: 0 - type: integer 
+	Parameter WritebackStage bound to: 1'b0 
+	Parameter ICache bound to: 1'b0 
+	Parameter ICacheECC bound to: 1'b0 
+	Parameter DbgTriggerEn bound to: 1'b0 
+	Parameter SecureIbex bound to: 1'b0 
+	Parameter DmHaltAddr bound to: 0 - type: integer 
+	Parameter DmExceptionAddr bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibex_register_file_ff' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_register_file_ff.sv:13]
+	Parameter RV32E bound to: 1'b0 
+	Parameter DataWidth bound to: 32'b00000000000000000000000000100000 
+	Parameter DummyInstructions bound to: 1'b0 
+	Parameter WordZeroVal bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_register_file_ff' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_register_file_ff.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'prim_clock_gating' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim_generic/rtl/prim_clock_gating.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'prim_clock_gating' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim_generic/rtl/prim_clock_gating.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'prim_buf' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim_generic/rtl/prim_buf.sv:7]
+	Parameter Width bound to: 32'sb00000000000000000000000000000100 
+INFO: [Synth 8-6155] done synthesizing module 'prim_buf' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim_generic/rtl/prim_buf.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'ibex_core' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_core.sv:16]
+	Parameter PMPEnable bound to: 1'b0 
+	Parameter PMPGranularity bound to: 32'b00000000000000000000000000000000 
+	Parameter PMPNumRegions bound to: 32'b00000000000000000000000000000100 
+	Parameter PMPRstCfg bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter PMPRstAddr bound to: 544'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter PMPRstMsecCfg[rlb] bound to: 1'b0 
+	Parameter PMPRstMsecCfg[mmwp] bound to: 1'b0 
+	Parameter PMPRstMsecCfg[mml] bound to: 1'b0 
+	Parameter MHPMCounterNum bound to: 32'b00000000000000000000000000000000 
+	Parameter MHPMCounterWidth bound to: 32'b00000000000000000000000000101000 
+	Parameter RV32E bound to: 1'b0 
+	Parameter RV32M bound to: 2 - type: integer 
+	Parameter RV32B bound to: 0 - type: integer 
+	Parameter RV32ZC bound to: 3 - type: integer 
+	Parameter BranchTargetALU bound to: 1'b0 
+	Parameter WritebackStage bound to: 1'b0 
+	Parameter ICache bound to: 1'b0 
+	Parameter ICacheECC bound to: 1'b0 
+	Parameter BusSizeECC bound to: 32'b00000000000000000000000000100000 
+	Parameter TagSizeECC bound to: 32'b00000000000000000000000000010110 
+	Parameter LineSizeECC bound to: 32'b00000000000000000000000001000000 
+	Parameter BranchPredictor bound to: 1'b0 
+	Parameter DbgTriggerEn bound to: 1'b0 
+	Parameter DbgHwBreakNum bound to: 32'b00000000000000000000000000000001 
+	Parameter ResetAll bound to: 1'b0 
+	Parameter RndCnstLfsrSeed bound to: -1403831308 - type: integer 
+	Parameter RndCnstLfsrPerm bound to: 160'b0001111000110101111011001011101001000110011111111101000110110001001011101001010110000001010100101100000001001111101001000011100001111000101010001101101011101101 
+	Parameter SecureIbex bound to: 1'b0 
+	Parameter DummyInstructions bound to: 1'b0 
+	Parameter RegFileECC bound to: 1'b0 
+	Parameter RegFileDataWidth bound to: 32'b00000000000000000000000000100000 
+	Parameter MemECC bound to: 1'b0 
+	Parameter MemDataWidth bound to: 32'b00000000000000000000000000100000 
+	Parameter DmBaseAddr bound to: 437321728 - type: integer 
+	Parameter DmAddrMask bound to: 4095 - type: integer 
+	Parameter DmHaltAddr bound to: 0 - type: integer 
+	Parameter DmExceptionAddr bound to: 0 - type: integer 
+	Parameter CsrMvendorId bound to: 0 - type: integer 
+	Parameter CsrMimpId bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibex_if_stage' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_if_stage.sv:16]
+	Parameter DmHaltAddr bound to: 0 - type: integer 
+	Parameter DmExceptionAddr bound to: 0 - type: integer 
+	Parameter DummyInstructions bound to: 1'b0 
+	Parameter ICache bound to: 1'b0 
+	Parameter RV32ZC bound to: 3 - type: integer 
+	Parameter ICacheECC bound to: 1'b0 
+	Parameter BusSizeECC bound to: 32'b00000000000000000000000000100000 
+	Parameter TagSizeECC bound to: 32'b00000000000000000000000000010110 
+	Parameter LineSizeECC bound to: 32'b00000000000000000000000001000000 
+	Parameter PCIncrCheck bound to: 1'b0 
+	Parameter ResetAll bound to: 1'b0 
+	Parameter RndCnstLfsrSeed bound to: -1403831308 - type: integer 
+	Parameter RndCnstLfsrPerm bound to: 160'b0001111000110101111011001011101001000110011111111101000110110001001011101001010110000001010100101100000001001111101001000011100001111000101010001101101011101101 
+	Parameter BranchPredictor bound to: 1'b0 
+	Parameter MemECC bound to: 1'b0 
+	Parameter MemDataWidth bound to: 32'b00000000000000000000000000100000 
+INFO: [Synth 8-6157] synthesizing module 'ibex_prefetch_buffer' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_prefetch_buffer.sv:12]
+	Parameter ResetAll bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'ibex_fetch_fifo' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_fetch_fifo.sv:15]
+	Parameter NUM_REQS bound to: 32'b00000000000000000000000000000010 
+	Parameter ResetAll bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_fetch_fifo' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_fetch_fifo.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_prefetch_buffer' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_prefetch_buffer.sv:12]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_if_stage.sv:200]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_if_stage.sv:200]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_if_stage.sv:216]
+INFO: [Synth 8-6157] synthesizing module 'ibex_compressed_decoder' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:16]
+	Parameter RV32ZC bound to: 3 - type: integer 
+	Parameter ResetAll bound to: 1'b0 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:223]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:223]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:226]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:226]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:249]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:257]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:257]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:282]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:282]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:328]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:328]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:366]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:366]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:384]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:384]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:429]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:507]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:507]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:552]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:557]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:67]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:43]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:622]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:674]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:705]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:710]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:736]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_compressed_decoder' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_compressed_decoder.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_if_stage' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_if_stage.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'ibex_id_stage' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_id_stage.sv:20]
+	Parameter RV32E bound to: 1'b0 
+	Parameter RV32M bound to: 2 - type: integer 
+	Parameter RV32B bound to: 0 - type: integer 
+	Parameter DataIndTiming bound to: 1'b0 
+	Parameter BranchTargetALU bound to: 1'b0 
+	Parameter WritebackStage bound to: 1'b0 
+	Parameter BranchPredictor bound to: 1'b0 
+	Parameter MemECC bound to: 1'b0 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_id_stage.sv:376]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_id_stage.sv:318]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_id_stage.sv:318]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_id_stage.sv:425]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_id_stage.sv:425]
+INFO: [Synth 8-6157] synthesizing module 'ibex_decoder' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:16]
+	Parameter RV32E bound to: 1'b0 
+	Parameter RV32M bound to: 2 - type: integer 
+	Parameter RV32B bound to: 0 - type: integer 
+	Parameter BranchTargetALU bound to: 1'b0 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:240]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:280]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:309]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:326]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:357]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:357]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:366]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:382]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:407]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:458]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:568]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:596]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:632]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:692]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:744]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:825]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:825]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:995]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:1143]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_decoder' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_decoder.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'ibex_controller' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_controller.sv:13]
+	Parameter WritebackStage bound to: 1'b0 
+	Parameter BranchPredictor bound to: 1'b0 
+	Parameter MemECC bound to: 1'b0 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_controller.sv:494]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_controller.sv:757]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_controller' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_controller.sv:13]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_id_stage.sv:794]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_id_stage.sv:794]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_id_stage.sv:796]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_id_stage' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_id_stage.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'ibex_ex_block' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_ex_block.sv:11]
+	Parameter RV32M bound to: 2 - type: integer 
+	Parameter RV32B bound to: 0 - type: integer 
+	Parameter BranchTargetALU bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'ibex_multdiv_fast' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_multdiv_fast.sv:17]
+	Parameter RV32M bound to: 2 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_multdiv_fast.sv:293]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_multdiv_fast.sv:293]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_multdiv_fast.sv:425]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_multdiv_fast' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_multdiv_fast.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'ibex_alu' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_alu.sv:9]
+	Parameter RV32B bound to: 0 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_alu.sv:60]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_alu.sv:85]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_alu.sv:97]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_alu.sv:120]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_alu.sv:160]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_alu.sv:305]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_alu.sv:372]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_alu.sv:392]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_alu.sv:1322]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_alu' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_alu.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_ex_block' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_ex_block.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_load_store_unit' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:17]
+	Parameter MemECC bound to: 1'b0 
+	Parameter MemDataWidth bound to: 32'b00000000000000000000000000100000 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:119]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:119]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:122]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:122]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:130]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:130]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:142]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:142]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:156]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:156]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:176]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:176]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:229]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:229]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:244]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:244]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:283]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:283]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:322]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:322]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:383]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_load_store_unit' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_load_store_unit.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'ibex_wb_stage' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_wb_stage.sv:17]
+	Parameter ResetAll bound to: 1'b0 
+	Parameter WritebackStage bound to: 1'b0 
+	Parameter DummyInstructions bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_wb_stage' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_wb_stage.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'ibex_cs_registers' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_cs_registers.sv:12]
+	Parameter DbgTriggerEn bound to: 1'b0 
+	Parameter DbgHwBreakNum bound to: 32'b00000000000000000000000000000001 
+	Parameter DataIndTiming bound to: 1'b0 
+	Parameter DummyInstructions bound to: 1'b0 
+	Parameter ShadowCSR bound to: 1'b0 
+	Parameter ICache bound to: 1'b0 
+	Parameter MHPMCounterNum bound to: 32'b00000000000000000000000000000000 
+	Parameter MHPMCounterWidth bound to: 32'b00000000000000000000000000101000 
+	Parameter PMPEnable bound to: 1'b0 
+	Parameter PMPGranularity bound to: 32'b00000000000000000000000000000000 
+	Parameter PMPNumRegions bound to: 32'b00000000000000000000000000000100 
+	Parameter PMPRstCfg bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter PMPRstAddr bound to: 544'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter PMPRstMsecCfg[rlb] bound to: 1'b0 
+	Parameter PMPRstMsecCfg[mmwp] bound to: 1'b0 
+	Parameter PMPRstMsecCfg[mml] bound to: 1'b0 
+	Parameter RV32E bound to: 1'b0 
+	Parameter RV32M bound to: 2 - type: integer 
+	Parameter RV32B bound to: 0 - type: integer 
+	Parameter CsrMvendorId bound to: 0 - type: integer 
+	Parameter CsrMimpId bound to: 0 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_cs_registers.sv:335]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_cs_registers.sv:610]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_cs_registers.sv:716]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_cs_registers.sv:719]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_cs_registers.sv:827]
+INFO: [Synth 8-226] default block is never used [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_cs_registers.sv:827]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000000110 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 6'b010000 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized0' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000100000 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized0' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized1' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000010010 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 18'b000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized1' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized2' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000000111 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 7'b0000000 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized2' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized3' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000100000 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized3' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized4' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000100000 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 32'b01000000000000000000000000000011 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized4' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized5' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000000011 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized5' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_counter' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_counter.sv:5]
+	Parameter CounterWidth bound to: 32'sb00000000000000000000000001000000 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_counter' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_counter.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'ibex_counter__parameterized0' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_counter.sv:5]
+	Parameter CounterWidth bound to: 32'sb00000000000000000000000001000000 
+	Parameter ProvideValUpd bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_counter__parameterized0' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_counter.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized6' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000001000 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized6' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_cs_registers' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_cs_registers.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_core' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_core.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_top' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_top.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'bram_mem' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/tmp/bram_mem.sv:6]
+	Parameter ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter MEM_FILE bound to: E:/vivadoprojects/ibex_soc/firmware.hex - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'bram_mem' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/tmp/bram_mem.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'soc_bus' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/rtl/soc_bus.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'soc_bus' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/rtl/soc_bus.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'simple_gpio' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/rtl/simple_gpio.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'simple_gpio' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/rtl/simple_gpio.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_soc_top' (0#1) [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/tmp/ibex_soc_top.sv:11]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mhpmcounter_incr_reg' and it is trimmed from '32' to '3' bits. [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/rtl/ibex_cs_registers.sv:1285]
+WARNING: [Synth 8-7129] Port addr_i[7] in module simple_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[6] in module simple_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[5] in module simple_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[4] in module simple_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[1] in module simple_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_i[0] in module simple_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[31] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[30] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[29] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[27] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[26] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[25] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[24] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[23] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[22] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[21] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[20] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[19] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[18] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[17] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[16] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[15] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[14] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[13] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[12] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[11] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[10] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[9] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[8] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[7] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[6] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[5] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[4] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[3] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[2] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[1] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cpu_addr_i[0] in module soc_bus is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[31] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[30] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[29] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[28] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[27] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[26] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[25] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[24] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[23] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[22] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[21] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[20] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[19] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[18] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[17] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[16] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[15] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[14] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[1] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_addr_i[0] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[31] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[30] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[29] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[28] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[27] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[26] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[25] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[24] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[23] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[22] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[21] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[20] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[19] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[18] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[17] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[16] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[15] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[14] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[13] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[12] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[11] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[10] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[9] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[8] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[7] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[6] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[5] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[4] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[3] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[2] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[1] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_wdata_i[0] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_we_i in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_be_i[3] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_be_i[2] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_be_i[1] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_be_i[0] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_addr_i[31] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_addr_i[30] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_addr_i[29] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_addr_i[28] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_addr_i[27] in module bram_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_addr_i[26] in module bram_mem is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1513.141 ; gain = 627.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1513.141 ; gain = 627.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1513.141 ; gain = 627.059
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1513.141 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc] for cell 'u_zynq_ps/zynq_ps_bd_i/processing_system7_0'
+Finished Parsing XDC File [e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc] for cell 'u_zynq_ps/zynq_ps_bd_i/processing_system7_0'
+Parsing XDC File [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/constrs_1/imports/tmp/pins.xdc]
+Finished Parsing XDC File [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/constrs_1/imports/tmp/pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/constrs_1/imports/tmp/pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ibex_soc_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ibex_soc_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/vivadoprojects/ibex_soc/ibex_soc.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/vivadoprojects/ibex_soc/ibex_soc.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1608.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1608.227 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1608.227 ; gain = 722.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z015clg485-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1608.227 ; gain = 722.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 104).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 105).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 106).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 107).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 108).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 109).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 110).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 111).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 112).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 113).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 114).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 115).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 116).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 117).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 118).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 119).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 120).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 121).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 122).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 123).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 124).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 125).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 126).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 127).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 128).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 129).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 130).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 131).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 132).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 133).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 134).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 135).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 136).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 137).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 138).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 139).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 140).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 141).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 142).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 143).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 144).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 145).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 146).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 147).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 148).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 149).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 150).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 151).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 152).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 153).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 154).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 155).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 156).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 157).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 158).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 159).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 160).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 161).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 162).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 163).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 164).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 165).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 166).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 167).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 168).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 169).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 170).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 171).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 172).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 173).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 174).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 175).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 176).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 177).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 178).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 179).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 180).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 181).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 182).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 183).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 184).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 185).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 186).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 187).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 188).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 189).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 190).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 191).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 192).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 193).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 194).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 195).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 196).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 197).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 198).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 199).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 200).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 201).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 202).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 203).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 204).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 205).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 206).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 207).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 208).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 209).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 210).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 211).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 212).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 213).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 214).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 215).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 216).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 217).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 218).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 219).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 220).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 221).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 222).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 223).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 224).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 225).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 226).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 227).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 228).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 229).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 230).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 231).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 232).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 233).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 234).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 235).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 236).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 237).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 238).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 239).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 240).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 241).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 242).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 243).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 244).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 245).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 246).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 247).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 248).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 249).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 250).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 251).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 252).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 253).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 254).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 255).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 256).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 257).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 258).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 259).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 260).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  e:/vivadoprojects/ibex_soc/ibex_soc.gen/sources_1/bd/zynq_ps_bd/ip/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0/zynq_ps_bd_processing_system7_0_0_in_context.xdc, line 261).
+Applied set_property KEEP_HIERARCHY = SOFT for u_zynq_ps/zynq_ps_bd_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_zynq_ps/zynq_ps_bd_i/processing_system7_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1608.227 ; gain = 722.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_mult_fast.mult_state_q_reg' in module 'ibex_multdiv_fast'
+INFO: [Synth 8-802] inferred FSM for state register 'md_state_q_reg' in module 'ibex_multdiv_fast'
+INFO: [Synth 8-802] inferred FSM for state register 'ls_fsm_cs_reg' in module 'ibex_load_store_unit'
+WARNING: [Synth 8-327] inferring latch for variable 'en_latch_reg' [E:/vivadoprojects/ibex_soc/ibex_soc.srcs/sources_1/imports/ibex/vendor/lowrisc_ip/ip/prim_generic/rtl/prim_clock_gating.sv:23]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 MD_IDLE |                              000 |                              000
+                MD_ABS_A |                              001 |                              001
+                MD_ABS_B |                              010 |                              010
+                 MD_COMP |                              011 |                              011
+                 MD_LAST |                              100 |                              100
+          MD_CHANGE_SIGN |                              101 |                              101
+               MD_FINISH |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'md_state_q_reg' using encoding 'sequential' in module 'ibex_multdiv_fast'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ALBL |                               00 |                               00
+                    ALBH |                               01 |                               01
+                    AHBL |                               10 |                               10
+                    AHBH |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_mult_fast.mult_state_q_reg' using encoding 'sequential' in module 'ibex_multdiv_fast'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+            WAIT_GNT_MIS |                              001 |                              001
+         WAIT_RVALID_MIS |                              010 |                              010
+WAIT_RVALID_MIS_GNTS_DONE |                              011 |                              100
+                WAIT_GNT |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ls_fsm_cs_reg' using encoding 'sequential' in module 'ibex_load_store_unit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1608.227 ; gain = 722.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 2     
+	   2 Input   34 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 10    
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               34 Bit    Registers := 2     
+	               32 Bit    Registers := 54    
+	               31 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 35    
++---RAMs : 
+	             128K Bit	(4096 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   3 Input   64 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 5     
+	   2 Input   34 Bit        Muxes := 9     
+	   7 Input   34 Bit        Muxes := 1     
+	   4 Input   34 Bit        Muxes := 2     
+	   2 Input   33 Bit        Muxes := 2     
+	   7 Input   33 Bit        Muxes := 2     
+	   3 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 60    
+	   4 Input   32 Bit        Muxes := 16    
+	   3 Input   32 Bit        Muxes := 6     
+	  11 Input   32 Bit        Muxes := 1     
+	   7 Input   32 Bit        Muxes := 2     
+	   4 Input   16 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   5 Input    7 Bit        Muxes := 1     
+	   8 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 12    
+	   4 Input    5 Bit        Muxes := 7     
+	   6 Input    5 Bit        Muxes := 2     
+	  11 Input    5 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   7 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 9     
+	   6 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 31    
+	   3 Input    3 Bit        Muxes := 3     
+	  11 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 3     
+	   5 Input    3 Bit        Muxes := 4     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 31    
+	   4 Input    2 Bit        Muxes := 10    
+	   6 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 2     
+	  11 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 167   
+	   4 Input    1 Bit        Muxes := 34    
+	   6 Input    1 Bit        Muxes := 15    
+	   3 Input    1 Bit        Muxes := 5     
+	   7 Input    1 Bit        Muxes := 7     
+	  11 Input    1 Bit        Muxes := 18    
+	   5 Input    1 Bit        Muxes := 14    
+	   8 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 160 (col length:60)
+BRAMs: 190 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mac_res_signed, operation Mode is: C+A*B.
+DSP Report: operator mac_res_signed is absorbed into DSP mac_res_signed.
+DSP Report: operator mac_res_signed0 is absorbed into DSP mac_res_signed.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1713.305 ; gain = 827.223
+---------------------------------------------------------------------------------
+ Sort Area is  mac_res_signed_0 : 0 0 : 2365 2365 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ibex_soc_top | u_bram/mem_reg | 4 K x 32(READ_FIRST)   | W | R | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++-------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ibex_multdiv_fast | C+A*B       | 17     | 17     | 34     | -      | 34     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1751.348 ; gain = 865.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1968.059 ; gain = 1081.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ibex_soc_top | u_bram/mem_reg | 4 K x 32(READ_FIRST)   | W | R | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++-------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_bram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_bram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_bram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_bram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_bram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_bram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_bram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_bram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:23 . Memory (MB): peak = 2038.516 ; gain = 1152.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 2062.359 ; gain = 1176.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 2062.359 ; gain = 1176.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 2062.359 ; gain = 1176.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 2062.359 ; gain = 1176.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:24 ; elapsed = 00:01:26 . Memory (MB): peak = 2069.324 ; gain = 1183.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:24 ; elapsed = 00:01:26 . Memory (MB): peak = 2069.324 ; gain = 1183.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ibex_multdiv_fast | C+A*B       | 30     | 18     | 48     | -      | 34     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |zynq_ps_bd_processing_system7_0_0 |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |zynq_ps_bd_processing_system7_0 |     1|
+|2     |BUFG                            |     2|
+|3     |CARRY4                          |    64|
+|4     |DSP48E1                         |     1|
+|5     |LUT1                            |     4|
+|6     |LUT2                            |   191|
+|7     |LUT3                            |   444|
+|8     |LUT4                            |   308|
+|9     |LUT5                            |   472|
+|10    |LUT6                            |  1928|
+|11    |MUXF7                           |   256|
+|12    |RAMB36E1                        |     4|
+|16    |FDCE                            |  1674|
+|17    |FDPE                            |     5|
+|18    |FDRE                            |   308|
+|19    |LD                              |     1|
+|20    |IBUF                            |     1|
+|21    |OBUF                            |     4|
++------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:24 ; elapsed = 00:01:26 . Memory (MB): peak = 2069.324 ; gain = 1183.242
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 424 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 2069.324 ; gain = 1088.156
+Synthesis Optimization Complete : Time (s): cpu = 00:01:25 ; elapsed = 00:01:26 . Memory (MB): peak = 2069.324 ; gain = 1183.242
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 2078.430 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 326 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2082.090 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LD => LDCE (inverted pins: G): 1 instance 
+
+Synth Design complete | Checksum: cef2872f
+INFO: [Common 17-83] Releasing license: Synthesis
+208 Infos, 203 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 2082.090 ; gain = 1421.543
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2082.090 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/vivadoprojects/ibex_soc/ibex_soc.runs/synth_1/ibex_soc_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file ibex_soc_top_utilization_synth.rpt -pb ibex_soc_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 25 17:46:05 2026...

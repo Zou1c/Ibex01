@@ -1,0 +1,16 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Mar 25 17:47:21 2026
+| Host         : ZZZixth running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file ibex_soc_top_bus_skew_routed.rpt -pb ibex_soc_top_bus_skew_routed.pb -rpx ibex_soc_top_bus_skew_routed.rpx
+| Design       : ibex_soc_top
+| Device       : 7z015-clg485
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+
