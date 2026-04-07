@@ -8,8 +8,8 @@
 
 to be continued...
 
-# reference
-## Ibex
+# Reference
+## Ibex RISC-V core
 ```
 https://github.com/lowRISC/ibex
 ```
@@ -23,3 +23,6 @@ https://claude.ai/share/bacebb2a-8b1c-4371-92d2-d4ad6cec9df6
 ```
 https://claude.ai/share/938a640d-08fe-476d-909c-82fd2dfb54d0
 ```
+
+# Others
+Pleas ignore the file "blank.txt", which is used to create folder in github repo and deal with the maxinum of uploading files(100).
