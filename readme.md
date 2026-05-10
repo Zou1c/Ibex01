@@ -8,6 +8,12 @@
 
 to be continued...
 
+# Environment
+- development：Vivado 24（which means you need at least 200GB disk space）
+- software OS：Windows 11（16GB main memory is enough，more is better）
+- Hardware CPU：12th Gen Intel(R) Core(TM) i5-12600KF（only affects synthesis and implementation speed）
+
+
 # Reference
 ## Ibex RISC-V core
 ```
