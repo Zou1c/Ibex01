@@ -2,8 +2,7 @@
 ## to do
 1. code description
 2. project description
-3. experimental environment
-4. how to run it
+3. how to run it
 
 
 to be continued...
@@ -32,3 +31,5 @@ https://claude.ai/share/938a640d-08fe-476d-909c-82fd2dfb54d0
 
 # Others
 Pleas ignore the file "blank.txt", which is used to create folder in github repo and deal with the maxinum of uploading files(100).
+
+It seems that simply clone this project and run dosen't work, synthesis STEP will generate error. (Unresolved)
